@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@use "variables";
+
+@media (max-width: 960px) {
+    .companyText {
+        line-height: variables.$lhMedium;
+    }
+
+    .aboutText {
+        line-height: variables.$lhMedium;
+    }
+
+    .tabList {
+        flex-direction: column;
+        gap: 8px;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .tabTitle {
+        font-size: variables.$fsMedium;
+    }
+
+    .tabList-date {
+        width: 100%;
+    }
+
+    .tabList-info {
+        width: 100%;
+    }
+
+    .contactBtn {
+        padding: 32px 148px;
+        font-size: variables.$fsMedium;
+    }
+
+    // form
+    .form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 690px) {
+    .wrapper {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .headerLogo {
+        width: 170px;
+        height: 40px;
+    }
+
+    .sectionInfo {
+        margin-top: 32px;
+    }
+
+    .sectionTitle {
+        font-size: variables.$fsBigger;
+    }
+
+    .companyBg {
+        padding-top: 88px;
+        padding-bottom: 88px;
+    }
+
+    .companyText {
+        font-size: variables.$fsMedium;
+    }
+
+    .comapnyBr {
+        display: none;
+    }
+
+    .aboutText {
+        font-size: variables.$fsMedium;
+    }
+
+    .tabBox {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    .tabBox.is-shown {
+        border: 12px solid variables.$red;
+    }
+
+    .tabTitle {
+        padding-right: 8px;
+        padding-left: 8px;
+        font-size: variables.$fsSmall;
+    }
+
+    .faqList {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .faqBtn {
+        display: none;
+    }
+
+    .contactBtn {
+        padding: 16px 48px;
+    }
+
+    // form
+    .form {
+        width: 100%;
+    }
+}
