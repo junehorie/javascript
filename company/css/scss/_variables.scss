@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@mixin tablet {
+    @media (max-width: 960px) {
+        @content;
+    }
+}
+
+// color
+$white: #fff;
+$darkwhite: #f3f3f3;
+$gray: #e5e5e5;
+$lightblack: #333;
+$red: #d7003a;
+
+// fontsize
+$fsSmall: 16px;
+$fsMedium: 18px;
+$fsBig: 24px;
+$fsBigger: 28px;
+
+// line-height
+$lhSmall: 32px;
+$lhMedium: 40px;
+$lhBig: 64px;
+
+// mixin
+@mixin flexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin sectionPaddingY {
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    @include tablet {
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+}
+
+
+
+
