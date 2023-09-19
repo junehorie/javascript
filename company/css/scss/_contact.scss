@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+@use "base";
+@use "header";
+@use "variables";
+
+// form
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding: 32px 64px;
+    background-color: #fff;
+
+    &Title {
+        font-size: variables.$fsBig;
+        text-align: center;
+    }
+
+    &Name,
+    &Email,
+    &Inquiry {
+        display: block;
+        margin-top: 32px;
+    }
+
+    &Subtitle {
+        display: inline-block;
+    }
+
+    &Input {
+        width: 100%;
+        margin-top: 8px;
+        padding: 8px;
+        border: 1.5px solid variables.$gray;
+    }
+
+    &Btn {
+        display: block;
+        width: 50%;
+        margin: 32px auto 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        background-color: variables.$red;
+        color: variables.$white;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+}
+
+@keyframes contentOpen {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
